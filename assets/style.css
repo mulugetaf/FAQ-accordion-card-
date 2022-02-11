@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+:root {
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --ery-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+@media (min-width: 376px) {
+    body {
+        background: linear-gradient(180deg, var(--soft-violet) 30%, var(--soft-blue) 80%);
+        background-repeat: no-repeat;
+
+        width: 100%;
+        min-width: 100vh;
+        height: 100vh;
+        font-size: 12px;
+        font-family: 'Kumbh Sans', sans-serif;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+p{
+    font-weight:400;
+    color: var(--dark-grayish-blue);
+    width:80%;
+    
+}
+h1{
+    font-weight:700;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+hr{
+    width:80%;
+    position: relative;
+    right: 40px;
+}
+.main-container {
+    background-color: var(--light-grayish-blue);
+    margin: 0;
+    width: 70%;
+    height: 450px;
+    border-radius: 10px;
+
+
+
+}
+
+.left {
+
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    padding: 0 auto;
+
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-top: 3rem;;
+}
+
+.bg-image {
+    height: 36rem;
+    width: 36rem;
+    position: relative;
+    bottom: 5rem;
+    left: 10rem;
+    transform: translateX(-70%);
+}
+
+.woman-image {
+    height: 20rem;
+    width: 25rem;
+    position: relative;
+    right: 3rem;
+    bottom: 32rem;
+    /* -moz-transform: rotate(-5deg); */
+}
+
+.box-image {
+    height: 12rem;
+    width: 12rem;
+    position: absolute;
+    bottom: 10rem;
+    left: 8rem;
+}
+
+.question{
+
+}
+.answer{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+
+}
+.icon-arrow-down{
+    width: 10px;
+    height: 10px;
+    /* display: inline-block; */
+    float: right;
+   
+}
+.main-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content-container{
+width: auto;
+height: 100%;
+}
