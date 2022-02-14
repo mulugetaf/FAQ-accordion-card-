@@ -39,6 +39,9 @@ p{
     width:80%;
     
 }
+p:hover{
+    color: var(--soft-red)
+}
 h1{
     font-weight:700;
     font-family: 'Kumbh Sans', sans-serif;
@@ -103,21 +106,46 @@ hr{
     left: 8rem;
 }
 
-.question{
+/* .question{
 
-}
-.answer{
+} */
+.answer {
     visibility: hidden;
     width: 0;
     height: 0;
 
 }
+.answer-after{
+    visibility: visible;
+    width: 70%;
+    height:auto;
+
+}
+
 .icon-arrow-down{
     width: 10px;
     height: 10px;
     /* display: inline-block; */
     float: right;
    
+}
+.icon-arrow-up{
+    visibility: hidden;
+    width: 10px;
+    height: 10px;
+    /* display: inline-block; */
+    float: right;
+    transform: rotate(180deg);
+
+}
+.icon-arrow-up-after{
+    visibility: visible;
+    width: 10px;
+    height: 10px;
+    /* display: inline-block; */
+    float: right;
+    transform: rotate(180deg);
+
 }
 .main-container:after {
     content: "";
